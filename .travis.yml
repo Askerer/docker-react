@@ -6,4 +6,4 @@ before_install:
   - docker build -t askerer/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Askerer/docker-react npm run test
+  - docker run -e CI=true askerer/docker-react npm run test
